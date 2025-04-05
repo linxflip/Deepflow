@@ -32,6 +32,9 @@ class indexNN(nn.module):
         scaled_relu_02 = relu_02_output * self w11
 
         input_to_final_relu = scaled_relu_01 + scaled_relu_02 + self.final_bias
+
+        output = F.relu(input_to_final_relu)
+        return output
 # fully connected layer
 
 # output
