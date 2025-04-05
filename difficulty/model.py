@@ -10,9 +10,15 @@ class indexNN(nn.module):
     def __init__(self):
         super().__init__()
         # initialize thr weights and biases
+        # layer 0
         self.w00 = nn.Parameter(torch.tensor(1.7), requires_grad=False)
         self.b00 = nn.Parameter(torch.tensor(1.7), requires_grad=False)
+        self.w01 = nn.Parameter(torch.tensor(1.7), requires_grad=False)
 
+        # layer 1
+        self.w10 = nn.Parameter(torch.tensor(1.7), requires_grad=False)
+        self.b10 = nn.Parameter(torch.tensor(1.7), requires_grad=False)
+        self.w11 = nn.Parameter(torch.tensor(1.7), requires_grad=False)
 # fully connected layer
 
 # output
