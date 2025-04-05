@@ -3,9 +3,14 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.optim as SGD
 
-# parameters
+def main():
+    # input
+    # creates a tensor - data in a range
+    input_doses = torch.linspace(start=0, end=1, steps=10)
 
-# convolution layer 
+    model = indexNN()
+    output_values
+
 class indexNN(nn.module):
     def __init__(self):
         super().__init__()
@@ -35,6 +40,5 @@ class indexNN(nn.module):
 
         output = F.relu(input_to_final_relu)
         return output
-# fully connected layer
 
-# output
+main()
